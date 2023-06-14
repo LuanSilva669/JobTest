@@ -1,74 +1,58 @@
-/* Estilos básicos para o header */
+body {
+  margin: 0;
+  padding: 0;
+}
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 62px;
-    background: #FFFFFF;
-    opacity: 1;
-    z-index: 100;
-    display: flex;
-    align-items: center; /* Centralizar verticalmente */
-    justify-content: center; /* Centralizar horizontalmente */
-  }
-  
-  /* Estilos para o logo ou título do header */
-  header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    display: inline-block; /* Manter o logo em linha */
-  }
-  
-  /* Estilos para a navegação do header */
-  header nav {
-    display: inline-block; /* Manter a navegação em linha */
-  }
-  
-  header nav a {
-    color:black;
-    margin-right: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-  header nav a:hover {
-    color: #ccc;
-  }
-  
-  /* Estilos para um botão no header */
-  header .cta-button {
-    background-color: #fff;
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  header .cta-button:hover {
-    background-color: #ccc;
-  }
-  
-  /* Media queries para tornar o header responsivo */
-  @media (max-width: 768px) {
-    header {
-      width: auto;
-      padding: 10px;
-    }
-    
-    header .logo {
-      font-size: 20px;
-    }
-    
-    header nav {
-      display: block;
-      margin-top: 10px;
-    }
-    
-    header nav a {
-      display: block;
-      margin-bottom: 10px;
-    }
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  font-family: Archer Pro, book;
+}
+
+.header-container {
+  display: flex;
+  width: 30rem;
+  align-items: center;
+  margin-left: 10rem; 
+}
+.logo{
+  margin-top: 0.2em;
+  opacity: 1;
+}
+.menu {
+  display:flex;
+  flex-direction: row;
+  margin-top: 3px;
+}
+.list {
+  display: flex;
+  margin-left: 1rem;
+}
+.list li {
+  font-size: 20px;
+  color: #333; 
+  padding: 5px 10px; 
+  list-style: none;
+}
+.list li:hover {
+  background-color: #f5f5f5; /* Define uma cor de fundo ao passar o mouse sobre as li's */
+}
+.list li a {
+  text-decoration: none; /* Remove a decoração de link (sublinhado) */
+  color: #333; /* Define a cor do link */
+}
+.perfil-marketplace {
+  display: flex;
+  align-items: center;
+  font-family: ;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 6em;
+}
+.icons  {
+  display: flex;
+}
+
+
+
