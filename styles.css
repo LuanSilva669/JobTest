@@ -190,7 +190,7 @@ a {
 @media (max-width: 600px) {
   .header {
     display: flex;
-    padding-left: 2em;
+    padding-left: 0em;
   }
   .menu {
     display: block;
