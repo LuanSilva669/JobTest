@@ -383,7 +383,7 @@ opacity: 1;
 }
 @media (max-width: 514px){
   .banner{
-    width: 500px;
+    width: 520px;
     display: flex;
     justify-content: center;
   }
