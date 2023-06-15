@@ -1,58 +1,263 @@
-body {
+:root {
+  font-size: 16px;
+  --white: #fff;
+  --backgroud: hsl(231, 14%, 90%);
+  width: 100%;
+  height: 100%;
+}
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-header {
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--backgroud);
+  
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  font-family: Archer Pro, book;
+  background: white;
+  height: 3rem;
+  padding-left: 20rem;
+  flex-direction:row;
+  padding-right: 10rem;
+  width: 100%;
+  
+  
 }
-
-.header-container {
+.main-nav{
+  list-style: none;
   display: flex;
-  width: 30rem;
+  gap: 0.5rem;
   align-items: center;
-  margin-left: 10rem; 
 }
-.logo{
-  margin-top: 0.2em;
-  opacity: 1;
+.main-nav a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: ArcherPro;
+}
+.main-nav a:hover {
+  background: var(--royal-blue-dark);
+}
+.dia-a-dia {
+  font-size: medium;
+  font-weight: 600;
 }
 .menu {
-  display:flex;
-  flex-direction: row;
-  margin-top: 3px;
-}
-.list {
-  display: flex;
-  margin-left: 1rem;
-}
-.list li {
-  font-size: 20px;
-  color: #333; 
-  padding: 5px 10px; 
   list-style: none;
-}
-.list li:hover {
-  background-color: #f5f5f5; /* Define uma cor de fundo ao passar o mouse sobre as li's */
-}
-.list li a {
-  text-decoration: none; /* Remove a decoração de link (sublinhado) */
-  color: #333; /* Define a cor do link */
-}
-.perfil-marketplace {
   display: flex;
+  gap: 0.5rem;
   align-items: center;
-  font-family: ;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 6em;
+  font-family: ArcherPro,bold; 
 }
-.icons  {
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.menu a:hover {
+  background: var(--royal-blue-dark);
+}
+.btn-menu {
+  display: none;
+}
+
+.header-second {
+  background-color: #033244;
   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding-left: 20rem;
+    flex-direction: row;
+    padding-right: 11rem;
+}
+.main-nav-second {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-nav-second a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: ArcherPro;
+  color: white;
+  
+}
+.main-nav-second a:hover {
+  background: var(--royal-blue-dark);
+}
+.menu-second {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: ArcherPro,bold; 
+  justify-content: space-between;
+}
+.menu-second a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.menu-second a:hover {
+  background: var(--royal-blue-dark);
+}
+.menu-second li {
+  float: left;
+}
+.search-container {
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: flex-end;
+  
+  
+}
+.search-input {
+  width: 14.875rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-color: #00AEEF;
+  border-radius: 4px;
+  background-color: #033244;
+  color: #fff;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  color: #00AEEF;
+  cursor: pointer;
+}
+
+.fa-search {
+  font-size: 1rem;
+  color: gray;
+}
+
+@media (max-width: 1456px) {
+  .header-second {
+    display: flex;
+    padding-left: 9rem;
+  }
+  .header {
+    display: flex;
+    padding-left: 9rem;
+  }
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    padding-left: 2em;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: var(--royal-blue-light);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+  }
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    padding: 1rem 0;
+    cursor: pointer;
+    padding-left: 22rem;
+    }
+    
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .nav.active .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+    .header-second {
+    display: none;
+  }
+}
+}

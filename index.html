@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cabeçalho</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="header-container">
-    <div class="logo">
-      <img src="/images/logo@2x.png" alt="Logo" width="120px">
-    </div>
-    <nav class="menu">
-      <ul class="list">
-        <li><a href="#">Nerdweb</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Atendimento</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+      <a href="/" class="logo"> <img src="/images/logo.png" alt="logo"> </a>
+      <ul class="menu" id="menu" role="menu">
+        <li><a href="/">Início</a></li>
+        <li><a href="/">Sobre</a></li>
+        <li><a href="/">Contato</a></li>
+        <li><a href="/">Login</a></li>
       </ul>
     </nav>
-  </div>
-  <div class="perfil-marketplace">
-   <div class="dia-dia">DIA A DIA</div>
-    <div class="icons">
-    <a href="#"><img src="/images/account_circle_black_24dp.png" alt="account"></a>
-    <a href="#"><img src="/images/shopping_cart_black_24dp.png" alt="cart"></a>
-</div>
-  </div>
-   
-  </header>
-  <!-- Resto do conteúdo da página -->
-</body>
+      <nav class="nav">
+        <ul class="menu" id="menu" role="menu">
+          <li class="dia-a-dia"><a href="/">DIA A DIA <b>▾</b></a></li>
+          <li><a href="/" class="account"><img src="/images/account_circle_black_24dp.png" alt=""></a></li>
+          <li><a href="/" class="cart"><img src="/images/shopping_cart_black_24dp.png" alt=""></a></li>
+        </ul>
+        <button
+        class="btn-menu"
+        aria-label="Abrir Menu"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      ><span class="hamburger"></span>
+      </button>
+      </nav>
+    </header>
+
+
+    <header class="header-second">
+      <nav class="main-nav-second">
+        <ul class="menu-second" id="menu" role="menu">
+          <li><a href="/">SITES <b>▾</b></a></li>
+          <li><a href="/">REDES SOCIAIS</a></li>
+          <li><a href="/">E-COMMERCE</a></li>
+          <li><a href="/">MÍDIA ONLINE</a></li>
+          <li><a href="/">LANDING PAGES</a></li>
+        </ul>
+        
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search">
+          <span class="search-icon"><i class="fa fa-search"></i></span>
+        </div>
+     
+      
+    </header>
+    
+  </body>
 </html>
+
+
