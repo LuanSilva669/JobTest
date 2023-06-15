@@ -278,10 +278,9 @@ opacity: 1;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 1350px) {
   .header {
-    display: flex;
-    padding-left: 2rem;
+   padding-left: 8rem;;
   }
   .main {
       display: none;
@@ -375,10 +374,10 @@ opacity: 1;
 }
 @media (max-width: 1456px) {
   .navbar {
-    padding-left: 11rem;
+    padding-left: 8rem;
   }
   .header {
-    padding-left: 11rem;
+    padding-left: 8rem;
   }
 }
 @media (max-width: 514px){
