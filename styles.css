@@ -262,8 +262,8 @@ a {
 }
 @font-face {
   font-family: 'ArcherProBook';
-  src: url('archer-pro-book.woff2') format('woff2'),
-       url('archer-pro-book.woff') format('woff');
+  src: url('ArcherProBook.ttf') format('ttf'),
+       url('ArcherProBook.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
