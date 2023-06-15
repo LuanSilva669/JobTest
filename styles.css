@@ -190,7 +190,7 @@ a {
 @media (max-width: 600px) {
   .header {
     display: flex;
-    padding-left: 2em;
+    padding-left: 1em;
   }
   .menu {
     display: block;
@@ -223,7 +223,7 @@ a {
     color: black;
     padding: 1rem 0;
     cursor: pointer;
-    padding-left: 12rem;
+    padding-left: 23rem;
     }
     
   .hamburger {
