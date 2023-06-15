@@ -7,13 +7,6 @@
   font-family: 'ArcherPro', sans-serif;
 }
 
-@font-face {
-  font-family: 'ArcherPro';
-  src: url('ArcherPro.ttf') format('ttf'),
-       url('ArcherPro.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
 
 * {
   margin: 0;
@@ -116,7 +109,7 @@ a {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  font-family: ArcherPro,bold; 
+  font: normal normal normal 14px/16px ArcherPro;
   justify-content: space-between;
 }
 .menu-second a {
@@ -157,23 +150,129 @@ a {
   font-size: 1rem;
   color: gray;
 }
-
-@media (max-width: 1456px) {
-  .navbar {
-    display: flex;
-    padding-left: 11rem;
-  }
-  .header {
-    display: flex;
-    padding-left: 11rem;
-  }
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
 }
+.banner img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+    align-items: center;
+    height: 18rem;
+}
+
+.column-1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: large;
+  padding-left: 20rem;
+  color: #033244;
+}
+.column-1 p {
+  color: #00AEEF;
+  font-weight: 900;
+ 
+}
+.carrossel{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  align-items: center;
+  margin-left: -5rem;
+}
+.carrossel a {
+  width: 3rem;
+  color:#067aa4;
+  font-size: larger;
+  font-weight: 600;
+}
+.service-button {
+  top: 1106px;
+left: 300px;
+width: 181px;
+height: 36px;
+/* UI Properties */
+background: var(--unnamed-color-71d8ff) 0% 0% no-repeat padding-box;
+background: #71D8FF 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.vertical-line {
+  width: 14rem;
+  height: 0.2rem;
+  background-color: #00AEEF;
+  border-radius: 5px;
+  transform: rotate(90deg);
+}
+.image-columns {
+  display: flex; /* Define a div como um flex container */
+}
+
+.image-columns img {
+  margin-right: 10px; /* Adiciona uma margem à direita de cada imagem */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
   .header {
     display: flex;
     padding-left: 2rem;
   }
+  .main {
+      display: none;
+        align-items: center;
+        height: 18rem;
+    }
   .menu {
     display: block;
     position: absolute;
@@ -239,17 +338,18 @@ a {
     .navbar {
     display: none;
   }
+  .banner img {
+    
+  }
+}
+@media (max-width: 1456px) {
+  .navbar {
+    padding-left: 11rem;
+  }
+  .header {
+    padding-left: 11rem;
+  }
 }
 
-.banner {
-  width: 100%;
-  display: flex;
-  }
-  
-.banner img {
-  top: 133px;
-left: 0px;
-width: 1920px;
-height: 653px;
-object-fit: auto;
-}
+
+ 
