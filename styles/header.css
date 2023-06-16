@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    height: 3rem;
+    padding-left: 20rem;
+    flex-direction:row;
+    padding-right: 10rem;
+    width: 100%;
+  }
+  .main-nav{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .main-nav a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: ArcherPro;
+  }
+  .main-nav a:hover {
+    background: var(--royal-blue-dark);
+  }
+  .dia-a-dia {
+    font-size: medium;
+    font-weight: 600;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: ArcherPro,bold; 
+  }
+  .menu a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .menu a:hover {
+    background: var(--royal-blue-dark);
+  }
+  .btn-menu {
+    display: none;
+  }
+   .navbar{
+    background-color: #033244;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding-left: 20rem;
+    flex-direction: row;
+    padding-right: 11rem;
+  }
+  .main-nav-second {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+.main-nav-second a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: ArcherPro;
+    color: white; 
+  }
+  .main-nav-second a:hover {
+    background: var(--royal-blue-dark);
+  }
+  .menu-second {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font: normal normal normal 14px/16px ArcherPro;
+    justify-content: space-between;
+  }
+  .menu-second a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .menu-second a:hover {
+    background: var(--royal-blue-dark);
+  }
+  .menu-second li {
+    float: left;
+  }
+  .search-container {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: flex-end; 
+  }
+  .search-input {
+    width: 14.875rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border-color: #00AEEF;
+    border-radius: 4px;
+    background-color: #033244;
+    color: #fff;
+  }
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    color: #00AEEF;
+    cursor: pointer;
+  }
+  .fa-search {
+    font-size: 1rem;
+    color: gray;
+  }

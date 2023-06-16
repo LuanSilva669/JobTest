@@ -1,0 +1,34 @@
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+  .banner img {
+    width: 100%;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    height: 18rem;
+    justify-content: center;
+  }
+  .column-1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+    padding-left: 5rem;
+    color: #033244;
+  }
+  .banner {
+    text-align: center;
+  }
+  .banner-pic {
+    display: inline-block;
+  }
+  .desktop-img {
+    display: inline-block;
+  }
+  .mobile-img {
+    display: none;
+  }
+  
