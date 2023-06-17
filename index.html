@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NerdWeb | Landingpage</title>
-    <link rel="stylesheet" href="/styles/queryes.css">
-      <link rel="stylesheet" href="/styles/header.css"> 
-      <link rel="stylesheet" href="/styles/banner.css">
-      <link rel="stylesheet" href="/styles/styles.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-      <script defer src="scripts.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="main-nav">
-      <a href="/" class="logo"> <img src="/images/logo.png" alt="logo"> </a>
-      <ul class="menu" id="menu" role="menu">
-        <li><a href="/">Início</a></li>
-        <li><a href="/">Sobre</a></li>
-        <li><a href="/">Contato</a></li>
-        <li><a href="/">Login</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NerdWeb | Landingpage</title>
+  <link rel="stylesheet" href="/styles/queries.css">
+  <link rel="stylesheet" href="/styles/service.css">
+  <link rel="stylesheet" href="/styles/header.css"> 
+  <link rel="stylesheet" href="/styles/banner.css">
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="heads">
+    <div class="mobile-logo">
+    <img src="/images/logo.png" alt="Logo">
+  </div>
+    <nav>
+      <ul class="main-menu">
+        <div class="logo">
+          <img src="/images/logo.png" alt="Logo">
+        </div>
+        <li><a href="#">NerdWeb</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Atendimento</a></li>
       </ul>
     </nav>
-      <nav class="nav">
-        <ul class="menu" id="menu" role="menu">
-          <li class="dia-a-dia"><a href="/">DIA A DIA <b>▾</b></a></li>
-          <li><a href="/" class="account"><img src="/images/account_circle_black_24dp.png" alt=""></a></li>
-          <li><a href="/" class="cart"><img src="/images/shopping_cart_black_24dp.png" alt=""></a></li>
-        </ul>
-        <button
-        class="btn-menu"
-        aria-label="Abrir Menu"
-        aria-haspopup="true"
-        aria-controls="menu"
-        aria-expanded="false"
-      ><span class="hamburger"></span>
-      </button>
-      </nav>
-    </header>
-    <header class="navbar">
-      <nav class="main-nav-second">
-        <ul class="menu-second" id="menu" role="menu">
-          <li><a href="/">SITES <b>▾</b></a></li>
-          <li><a href="/">REDES SOCIAIS</a></li>
-          <li><a href="/">E-COMMERCE</a></li>
-          <li><a href="/">MÍDIA ONLINE</a></li>
-          <li><a href="/">LANDING PAGES</a></li>
-        </ul>
-        <div class="search-container">
-          <input type="text" class="search-input" placeholder="Search">
-          <span class="search-icon"><i class="fa fa-search"></i></span>
-        </div>
-    </header>
-    <div class="banner">
-      <span class="banner-pic">
-        <img class="desktop-img" src="/images/banner.png" alt="banner">
-        <img class="mobile-img" src="/images/mobile/banner@2x.png" alt="banner">
-      </span>
+    <nav>
+      <ul class="secondary-menu">
+        <li class="dropdown">
+          <a class="dia-dia" href="#">Dia-a-dia &#9662;</a>
+          <ul class="dropdown-menu">
+            <!-- Conteúdo do menu dropdown -->
+            <li><a href="#">NerdWeb</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Atendimento</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fas fa-user"></i></a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
     </div>
-    
- 
-    
-  </body>
+    <div class="mobile-menu">
+      <div class="logo2">
+        <img src="images/logo2.png" alt="Logo"><button class="close-menu">X</button>
+      </div>
+      <ul>
+        <li><a href="#">NERDWEB</a></li>
+        <li><a href="#">SERVIÇOS</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">ATENDIMENTO</a></li>
+      </ul>
+      <div class="line">
+      <hr class="menu-divider">
+    </div>
+    <ul class="ul2">
+      <li><a class="toggle" href="#">SITES &#9662;</a></li>
+      <li><a href="#">REDES SOCIAIS</a></li>
+      <li><a href="#">E-COMMERCE</a></li>
+      <li><a href="#">MIDIA ONLINE</a></li>
+      <li><a href="#">LANDING PAGES</a></li>
+    </ul>
+    </div>
+  </header>
+  <div class="two-header">
+    <nav class="main-nav-second">
+      <ul id="menu" role="menu">
+        <li><a href="/">SITES <b>▾</b></a></li>
+        <li><a href="/">REDES SOCIAIS</a></li>
+        <li><a href="/">E-COMMERCE</a></li>
+        <li><a href="/">MÍDIA ONLINE</a></li>
+        <li><a href="/">LANDING PAGES</a></li>
+      </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" placeholder="Digite sua pesquisa.">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+    <div class="banner">
+      <img class="desktop-image" src="/images/banner.png" alt="Imagem para desktop">
+      <img class="mobile-image" src="images/mobile/banner.png" alt="Imagem para dispositivos móveis">
+    </div>
+    <div class="service-container">
+      <div class="title">
+        <strong><h1>Descubra os serviços da nerdweb <span>que mais combinam com a sua empresa</span></h1> </strong>
+        <div class="line2">
+          <hr class="menu-divider2">
+        </div>
+      </div>
+    <div class="carrossel-container">
+      <div class="carrossel">
+        <div class="carrossel-slide">
+          <img src="/images/desktop/alt_route_black_24dp.svg" alt="Imagem 1">
+          <div class="service-tite"> <h1>Titulo</h1><p> Lorem, ipsum dolor sit amet </p> </div>
+        </div>
+        <div class="carrossel-slide">
+          <img src="/images/desktop/headset_mic_black_24dp.svg" alt="Imagem 2">
+          <h1>Titulo</h1><p> Lorem, ipsum dolor sit amet </p>
+          <div>
+        </div>
+        </div>
+        <div class="carrossel-slide">
+          <img src="/images/desktop/inventory_black_24dp.svg" alt="Imagem 3">
+          <h1>Titulo</h1><p> Lorem, ipsum dolor sit amet </p>
+        </div>
+      </div>
+
+      <div class="carrossel-navigation">
+        <button class="carrossel-prev">&lt;</button>
+        <button class="carrossel-next">&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
-
-
+</body>
+</html>

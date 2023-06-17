@@ -1,44 +1,41 @@
-const nav = document.querySelector(".nav");
-const btnMenu = document.querySelector(".btn-menu");
-const menu = document.querySelector(".menu");
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeMenuButton = document.querySelector('.close-menu');
 
-function handleButtonClick(event) {
-  if (event.type === "touchstart") event.preventDefault();
-  event.stopPropagation();
-  nav.classList.toggle("active");
-  handleClickOutside(menu, () => {
-    nav.classList.remove("active");
-    setAria();
-  });
-  setAria();
+menuToggle.addEventListener('click', function() {
+  mobileMenu.classList.toggle('active');
+});
+closeMenuButton.addEventListener('click', function() {
+  mobileMenu.classList.remove('active');
+});
+
+const carrossel = document.querySelector('.carrossel');
+const prevBtn = document.querySelector('.carrossel-prev');
+const nextBtn = document.querySelector('.carrossel-next');
+
+let currentIndex = 0;
+let slideWidth = carrossel.clientWidth;
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === 0) ? carrossel.childElementCount - 1 : currentIndex - 1;
+  updateCarrossel();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === carrossel.childElementCount - 1) ? 0 : currentIndex + 1;
+  updateCarrossel();
+});
+
+function updateCarrossel() {
+  const offset = -currentIndex * slideWidth;
+  carrossel.style.transform = `translateX(${offset}px)`;
 }
 
-function handleClickOutside(targetElement, callback) {
-  const html = document.documentElement;
-  function handleHTMLClick(event) {
-    if (!targetElement.contains(event.target)) {
-      targetElement.removeAttribute("data-target");
-      html.removeEventListener("click", handleHTMLClick);
-      html.removeEventListener("touchstart", handleHTMLClick);
-      callback();
-    }
-  }
-  if (!targetElement.hasAttribute("data-target")) {
-    html.addEventListener("click", handleHTMLClick);
-    html.addEventListener("touchstart", handleHTMLClick);
-    targetElement.setAttribute("data-target", "");
-  }
-}
 
-function setAria() {
-  const isActive = nav.classList.contains("active");
-  btnMenu.setAttribute("aria-expanded", isActive);
-  if (isActive) {
-    btnMenu.setAttribute("aria-label", "Fechar Menu");
-  } else {
-    btnMenu.setAttribute("aria-label", "Abrir Menu");
-  }
-}
 
-btnMenu.addEventListener("click", handleButtonClick);
-btnMenu.addEventListener("touchstart", handleButtonClick);
+window.addEventListener('resize', () => {
+  slideWidth = carrossel.clientWidth;
+  updateCarrossel();
+});
+
+startCarrossel();

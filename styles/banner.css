@@ -1,34 +1,27 @@
-
 .banner {
+    position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center; 
+    height: auto;
   }
+  
   .banner img {
     width: 100%;
+    height: auto;
+    display: none; 
   }
-  .main {
-    display: flex;
-    align-items: center;
-    height: 18rem;
-    justify-content: center;
+  
+  @media (min-width: 768px) {
+    .banner .desktop-image {
+      display: block; 
+    }
+    .desktop-image {
+        display: none;
+    }
   }
-  .column-1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: large;
-    padding-left: 5rem;
-    color: #033244;
-  }
-  .banner {
-    text-align: center;
-  }
-  .banner-pic {
-    display: inline-block;
-  }
-  .desktop-img {
-    display: inline-block;
-  }
-  .mobile-img {
-    display: none;
+  
+  @media (max-width: 767px) {
+    .banner .mobile-image {
+      display: block; 
+    }
   }
   
