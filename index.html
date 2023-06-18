@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NerdWeb | Landingpage</title>
-  <link rel="stylesheet" href="/styles/queries.css">
+  <link rel="stylesheet" href="/styles/products.css">
   <link rel="stylesheet" href="/styles/service.css">
-  <link rel="stylesheet" href="/styles/header.css"> 
   <link rel="stylesheet" href="/styles/banner.css">
-  <link rel="stylesheet" href="/styles/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800;900&family=Rubik:ital,wght@0,400;0,700;0,800;1,800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="heads">
     <div class="mobile-logo">
-    <img src="/images/logo.png" alt="Logo">
-  </div>
+      <img src="/images/logo.png" alt="Logo">
+    </div>
     <nav>
       <ul class="main-menu">
         <div class="logo">
           <img src="/images/logo.png" alt="Logo">
         </div>
-        <li><a href="#">NerdWeb</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Atendimento</a></li>
+        <li><a class="a-style" href="#">NerdWeb</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Atendimento</a></li>
       </ul>
     </nav>
     <nav>
@@ -42,7 +37,6 @@
         <li class="dropdown">
           <a class="dia-dia" href="#">DIA-A-DIA &#9662;</a>
           <ul class="dropdown-menu">
-            <!-- Conteúdo do menu dropdown -->
             <li><a href="#">NerdWeb</a></li>
             <li><a href="#">Serviços</a></li>
             <li><a href="#">Blog</a></li>
@@ -60,7 +54,8 @@
     </div>
     <div class="mobile-menu">
       <div class="logo2">
-        <img src="images/logo2.png" alt="Logo"><button class="close-menu">X</button>
+        <img src="images/mobile/Grupo 550@2x.png" alt="Logo">
+        <button class="close-menu">X</button>
       </div>
       <ul>
         <li><a href="#">NERDWEB</a></li>
@@ -69,15 +64,15 @@
         <li><a href="#">ATENDIMENTO</a></li>
       </ul>
       <div class="line">
-      <hr class="menu-divider">
-    </div>
-    <ul class="ul2">
-      <li><a class="toggle" href="#">SITES &#9662;</a></li>
-      <li><a href="#">REDES SOCIAIS</a></li>
-      <li><a href="#">E-COMMERCE</a></li>
-      <li><a href="#">MIDIA ONLINE</a></li>
-      <li><a href="#">LANDING PAGES</a></li>
-    </ul>
+        <hr class="menu-divider">
+      </div>
+      <ul class="ul2">
+        <li><a class="toggle" href="#">SITES &#9662;</a></li>
+        <li><a href="#">REDES SOCIAIS</a></li>
+        <li><a href="#">E-COMMERCE</a></li>
+        <li><a href="#">MIDIA ONLINE</a></li>
+        <li><a href="#">LANDING PAGES</a></li>
+      </ul>
     </div>
   </header>
   <div class="two-header">
@@ -89,50 +84,74 @@
         <li><a href="/">MÍDIA ONLINE</a></li>
         <li><a href="/">LANDING PAGES</a></li>
       </ul>
-      </nav>
-      <div class="search-container">
-        <input type="text" placeholder="Digite sua pesquisa.">
-        <i class="fas fa-search"></i>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Digite sua pesquisa.">
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+  <div class="banner">
+    <img class="desktop-image" src="/images/banner.png" alt="Imagem para desktop">
+    <img class="mobile-image" src="images/mobile/banner.png" alt="Imagem para dispositivos móveis">
+  </div>
+  <div class="service-container">
+    <div class="title">
+      <strong><h1>Descubra os serviços da nerdweb <span>que mais combinam com a sua empresa</span></h1></strong>
+      <button class="button-explorer">VER SERVIÇOS</button>
+      <div class="line2">
+        <hr class="menu-divider2">
       </div>
     </div>
-    <div class="banner">
-      <img class="desktop-image" src="/images/banner.png" alt="Imagem para desktop">
-      <img class="mobile-image" src="images/mobile/banner.png" alt="Imagem para dispositivos móveis">
-    </div>
-    <div class="service-container">
-      <div class="title">
-        <strong><h1>Descubra os serviços da nerdweb <span>que mais combinam com a sua empresa</span></h1> </strong>
-        <div class="line2">
-          <hr class="menu-divider2">
-        </div>
-      </div>
     <div class="carrossel-container">
-      <div class="carrossel">
-        <div class="carrossel-slide">
-          <img src="/images/desktop/alt_route_black_24dp.svg" alt="Imagem 1">
-          <div class="service-tite"> <h1>Titulo</h1><p> Lorem, ipsum dolor sit amet </p> </div>
-        </div>
-        <div class="carrossel-slide">
-          <img src="/images/desktop/headset_mic_black_24dp.svg" alt="Imagem 2">
-          <h1>Titulo</h1><p> Lorem, ipsum dolor sit amet </p>
-          <div>
-        </div>
-        </div>
-        <div class="carrossel-slide">
-          <img src="/images/desktop/inventory_black_24dp.svg" alt="Imagem 3">
-          <h1>Titulo</h1><p> Lorem, ipsum dolor sit amet </p>
-        </div>
-      </div>
-
       <div class="carrossel-navigation">
         <button class="carrossel-prev">&lt;</button>
         <button class="carrossel-next">&gt;</button>
       </div>
+      <div class="carrossel">
+        <div class="carrossel-slide">
+          <img src="/images/desktop/alt_route_black_24dp.svg" alt="Imagem 1">
+          <h1 class="title2">Titulo</h1>
+          <p>Lorem, ipsum dolor sit amet dolor sit amet</p>
+        </div>
+        <div class="carrossel-slide">
+          <img src="/images/desktop/headset_mic_black_24dp.svg" alt="Imagem 2">
+          <h1 class="title2">Titulo</h1>
+          <p>Lorem, ipsum dolor sit amet dolor sit amet</p>
+        </div>
+        <div class="carrossel-slide">
+          <img src="/images/desktop/inventory_black_24dp.svg" alt="Imagem 3">
+          <h1 class="title2">Titulo</h1>
+          <p>Lorem, ipsum dolor sit amet dolor sit amet</p>
+        </div>
+      </div>
+    </div>
+      <div class="mobile-button">
+      <button class="button-mobile">VER SERVIÇOS</button>
+    </div>
     </div>
   </div>
-
+  <div class="products-container">
+    <div class="title-products">
+      <strong><h1>Conheça todos <p><span>produtos Nerdweb</span></h1></strong> 
+    </div>
+    <div class="carrossel-container-products">
+      <div class="carrossel-products">
+        <div class="carrossel-slide-products">
+          <img src="/images/mobile/LAPTOP.png" alt="Imagem 1">
+        </div>
+        <div class="carrossel-slide-products">
+          <img src="/images/mobile/PHONE.png" alt="Imagem 1">
+        </div>
+        <div class="carrossel-slide-products">
+          <img src="/images/mobile/SHOP.png" alt="Imagem 1">
+        </div>
+      </div>
+      <div class="mobile-button">
+        <button class="button-mobile2">VER TODOS OS PRODUTOS</button>
+      </div>
+  
+  
+ 
   <script src="script.js"></script>
-</body>
-</html>
 </body>
 </html>

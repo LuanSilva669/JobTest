@@ -10,6 +10,7 @@ closeMenuButton.addEventListener('click', function() {
 });
 
 const carrossel = document.querySelector('.carrossel');
+const carrosselProduct = document.querySelector('.carrossel-product');
 const prevBtn = document.querySelector('.carrossel-prev');
 const nextBtn = document.querySelector('.carrossel-next');
 
@@ -39,3 +40,5 @@ window.addEventListener('resize', () => {
 });
 
 startCarrossel();
+
+
