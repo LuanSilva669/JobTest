@@ -827,7 +827,7 @@ a:hover {
  }
  footer {
     background-color: #033244;
-    height: 56rem;
+    height: 100%;
  }
     .footer-navbar {
         margin-left: 10%;
@@ -910,6 +910,7 @@ a:hover {
     color: white;
     font-size: 15px;
     font-family: ui-serif;
+    margin-bottom: 14%;
 }
 }
 
