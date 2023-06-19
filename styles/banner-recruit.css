@@ -4,11 +4,14 @@
     justify-content: center;
     margin-bottom: 16%;
     width: 100%;
+    height: 53%;
 }
-.banner-recruit-main{
+.banner-recruit-main {
     display: flex;
     width: 100%;
     justify-content: center;
+    height: 36rem;
+    margin-bottom: 5%;
 }
 .mobile-image {
     display: none;
@@ -21,13 +24,13 @@
     justify-content: center;
 }
 .desktop-image2 {
-    width: 100%;
+    width: 90%;
     height: 36rem;
     display: flex;
 }
 .banner-content {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 39%;
     transform: translate(-50%, -50%);
     color: white;

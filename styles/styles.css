@@ -257,6 +257,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
 }
 .button-mobile2 {
     width: 64%;
@@ -288,12 +289,54 @@ nav ul li a {
     padding: 0;
     margin-bottom: 0%;
     height: 5rem;
-}
+    margin-left: 0;
+} 
 .carrossel-products {
     display: flex;
     justify-content: center;
     margin-top: 5%;
     background-color: #F3F3F3;
+}
+.carrossel-services {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 23px;
+    width: 93%;
+    gap: 4%;
+}
+.carrossel-slide-services {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #283137;
+    font-size: 30px;
+    color: #676767;
+    height: 36rem;
+    width: 36rem;
+    gap: 39px;
+}
+.carrossel-container-services {
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+    margin-top: 1%;
+    padding: 0;
+    margin-bottom: 9%;
+    display: flex;
+    height: 51rem;
+    justify-content: center;
+    height: 38rem;
+}
+.carrossel-slide-services h1 {
+    font-size: 28px;
+    margin-left: 2%;
+    color: white;
+}
+.carrossel-slide-services p {
+    margin-left: 2%;
+    color: white;
+    width: 25rem;
 }
 .carrossel-products-prev {
     left: -14px;
@@ -465,14 +508,17 @@ nav ul li a {
 .banner-know img {
     width: 100%;
 }
-  .banner-content-know {
+.banner-content-know {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #033244;
-    width: 73%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   .banner-content-know h1 {
     font-size: 18px;
@@ -485,7 +531,7 @@ nav ul li a {
     font-family: 'Roboto Slab';
     font-size: 13px;
     color: #07a5de;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 .button-mobile4 {   
     width: 55%;
@@ -500,12 +546,17 @@ nav ul li a {
     color: white;
     font-size: 10PX;
 }
-  .mobile-button4 {
+.mobile-button4 {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
+    margin-top: 0;
 }
+.desktop-image3 {
+    width: 100%;
+    height: 19rem;
+}   
  .line3 {
     display: flex;
     justify-content: center;
