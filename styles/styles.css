@@ -67,7 +67,7 @@ nav ul li a {
       }  
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .carrossel-slide-products h1 {
         font-size: 7px;
         margin-top: 0rem;
@@ -329,8 +329,8 @@ nav ul li a {
     background-color: #283137;
     font-size: 30px;
     color: #676767;
-    height: 36rem;
-    width: 36rem;
+    height: 35rem;
+    width: 24rem;
     gap: 39px;
 }
 .carrossel-container-services {
