@@ -263,3 +263,6 @@ a:hover {
 .toggle {
     display: flex;
 }
+.desktop-image {
+    width: 100%;
+}
