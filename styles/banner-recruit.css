@@ -6,29 +6,33 @@
     width: 100%;
     height: 53%;
 }
+
 .banner-recruit-main {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     height: 36rem;
     margin-bottom: 5%;
 }
+
 .mobile-image {
-     display: none; 
+    display: none;
     width: 100%;
 }
+
 .image-container {
     position: relative;
-    display: inline-block;
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
+
 .desktop-image2 {
+    display: flex;
     width: 90%;
     height: 36rem;
-    display: flex;
 }
+
 .banner-content {
     position: absolute;
     top: 100%;
@@ -36,31 +40,32 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: start;
-    color: blue;
 }
+
 .banner-content h1 {
     font-size: 38px;
     width: 55%;
     margin-bottom: 4%;
     color: #033244;
 }
-  
+
 .banner-content p {
     font-size: 26px;
     width: 56%;
     color: #005271;
 }
+
 .mobile-button2 {
-    margin-top: 9%;
-    width: 100%;
     display: flex;
     justify-content: start;
+    margin-top: 9%;
+    width: 100%;
 }
 
 .mobile-image2 {
     display: none;
 }
-  
+
 .button-mobile3 {
     width: 25%;
     height: 50px;

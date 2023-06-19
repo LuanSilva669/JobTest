@@ -1,9 +1,8 @@
 .banner {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 
 .title {
   width: 33%;
@@ -110,7 +109,6 @@
   right: -16px;
 }
 
-
 .linha-vertical {
   border-left: 1px solid black;
   height: 100px;
@@ -121,15 +119,13 @@
   font-size: 2rem;
   margin-top: 3rem;
 }
+
 .title2 p {
   text-align: center;
   font-size: 1rem;
   margin-top: 1rem;
 }
+
 .line2 {
   display: flex;
 }
-  
-
-  
- 
