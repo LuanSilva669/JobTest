@@ -33,30 +33,6 @@ nav ul li a {
     font-weight: 100    ;
 }
 
-@media (max-width: 910px){
-    .main-nav-second {
-        display: none;
-    }
-    .two-header {
-        display: none;
-    }   
-    p {
-        font-size: 17px;
-        text-align: center;
-        font-family: ui-serif;
-        font-weight: initial;
-    }
-    .carrossel-container {
-        width: 28%;
-        overflow: hidden;
-        position: relative;
-        margin-top: -2%;
-        padding: 0;
-    }
-    .title {
-        width: 46%;
-    }
-    }
 
 @media (max-width: 1404px) {
     .title h1 {
@@ -87,7 +63,6 @@ nav ul li a {
         width: 100%;
         color: #033244;
         font-size: 27px;
-        max-width: 25rem;
         font-family: 'Roboto Slab';
     }
     .menu-divider {
@@ -182,10 +157,11 @@ nav ul li a {
     .desktop-header {
         display: block;
     }
-    .carrossel-slide img{
+    .carrossel-slide img {
         width: 100%;
         height: 106px;
         display: flex;
+        margin-top: 34%;
     }
 .service-tite h1 {
         display: flex;
@@ -221,13 +197,13 @@ nav ul li a {
     margin-top: 1rem;
     display: none;
 }
-    .carrossel-container {
-        width: 26%;
-        overflow: scroll;
-        position: relative;
-        margin-top: 7%;
-        padding: 0;
-    }
+.carrossel-container {
+    width: 28%;
+    overflow: scroll;
+    position: relative;
+    margin-top: -2%;
+    padding: 0;
+}
     .carrossel {
         display: flex;
         transition: transform 0.3s ease-in-out;
@@ -242,21 +218,22 @@ nav ul li a {
 .title-products {
     display: flex;
     justify-content: center;
-    margin-top: 6%;
+    margin-top: -3%;
     flex-direction: column;
     width: 100%;
+    margin-bottom: -2%;
+    height: 5rem;
 }
 .title-products h1 {
     text-align: center;
-    width: 100%;
+    width: 72%;
     color: #033244;
-    font-size: 18px;
-    max-width: 25rem;
+    font-size: 29px;
     font-family: 'Roboto Slab';
 }
 .products-container h1 span {
     color: #00AEEF;
-    font-size: 18px;
+    font-size: 29px;
     font-weight: 800;
 }
 
@@ -292,13 +269,13 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     margin-bottom: 12%;
-    margin-top: 3%;
+    margin-top: 7%;
 }
 .carrossel-container-products {
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
-    margin-top: 7%;
+    margin-top: 1%;
     padding: 0;
     margin-bottom: 0%;
 }
@@ -318,35 +295,64 @@ nav ul li a {
     color: #033244;
     position: absolute;
 }
+.carrossel-slide-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bcb6b6;
+    font-size: 30px;
+    color: #676767;
+}
 .banner-recruit {
     position: relative;
+    display: -webkit-inline-box;
+    /* justify-content: center; */
+    margin-bottom: 16%;
+    width: 100%;
+    height: 21rem;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 16%;
+    height: 21rem;
+    margin-top: 10%;
 }
-.banner-recruit img {
-    width: 88%;
+.banner-recruit-main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 31rem;
 }
-  .banner-content {
+
+.banner-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 38%;
+    left: 47%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: #033244;
-    width: 73%;
+    color: white;
+    text-align: start;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 16rem;
 }
-  .banner-content h1 {
-    font-size: 24px;
-    #005271
-  }
-  .banner-content p {
-    font-size: 16px;
-    margin-top: 20px;
-    font-weight: revert;
-    font-family: 'Roboto Slab';
-    font-size: 13px;
+.banner-content h1 {
+    font-size: 22px;
+    width: 15rem;
+    margin-bottom: 9%;
+    color: #033244;
+    text-align: center;
+    margin-top: 9%;
+}
+.banner-content p {
+    font-size: 21px;
+    width: 100%;
     color: #005271;
+    height: -6rem;
 }
   .button-mobile3 {
     top: 1106px;
@@ -374,18 +380,17 @@ nav ul li a {
     justify-content: center;
     margin-bottom: 6%;
 }
- .service-section h1 {
-        display: flex;
-        justify-content: center;
-        font-size: 22px;
-    
- }
- .service-section p {
+.service-section h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 29px;
+}
+.service-section p {
     font-family: 'Roboto Slab';
     color: #0089BC;
-    font-size: 15px;
+    font-size: 23px;
     margin-top: 1%;
- }
+}
  .service-section-container {
     width: 100%;
     display: flex;
@@ -395,10 +400,11 @@ nav ul li a {
 .section-columns {
     background-color: #033244;
     width: 90%;
-    height: 21rem;
+    max-height: 100%;
     display: flex;
     justify-content: start;
     flex-direction: column;
+    height: 35rem;
 }
 .text-service {
     width: 90%;
@@ -420,8 +426,12 @@ nav ul li a {
  .text-service a {
     text-decoration: none;
     font-family: 'Roboto Slab';
-
  }
+ .mobile-image {
+    display: flex;
+    width: 90%;
+    height: 21rem;
+}
  .to-know {
     font-family: 'Roboto Slab';
     color: #00AEEF;
@@ -647,7 +657,112 @@ nav ul li a {
     font-family: ui-serif;
     margin-bottom: 14%;
 }
+.carrossel-navigation {
+    width: 500%;
+
 }
+.carrossel-prev {
+    display: none;
+}
+.carrossel-next {
+   display: none;
+}
+.carrossel-slide-products img {
+    width: 69px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desktop-image {
+    display: none;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+@media (max-width: 910px){
+    .main-nav-second {
+        display: none;
+    }
+    .two-header {
+        display: none;
+    }   
+    p {
+        font-size: 17px;
+        text-align: center;
+        font-family: ui-serif;
+        font-weight: initial;
+    }
+    .title {
+        width: 46%;
+    }
+    }
+}
+@media (max-width: 360px) {
+    .section-columns {
+        background-color: #033244;
+        width: 90%;
+        height: 21rem;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .carrossel-slide-products img {
+        width: 69px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .carrossel-slide-products h1 {
+        font-size: 5px;
+        margin-top: 5px;
+        margin-bottom: 0rem;
+        width: 3rem;
+        text-align: center;
+    }
+ .carrossel-container-products {
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+    margin-top: 1%;
+    padding: 0;
+    margin-bottom: 0%;
+    display: flex;
+    height: 5rem;
+} 
+    .carrossel-slide-products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bcb6b6;
+        font-size: 30px;
+        color: #676767;
+        height: 3rem;
+    }
+.carrossel-products {
+    gap: 7px;
+    width: 25%;
+    height: 4rem;
+}
+.button-mobile2 {
+    top: 1106px;
+    left: 300px;
+    width: 64%;
+    height: 36px;
+    background: var(--unnamed-color-71d8ff) 0% 0% no-repeat padding-box;
+    background: #71D8FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+    }
 
  
 

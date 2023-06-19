@@ -1,0 +1,68 @@
+.title-products {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.title-products h1 {
+    text-align: center;
+    width: 100%;
+    color: #033244;
+    font-size: 38px;
+    font-family: 'Roboto Slab';
+}
+
+.title-products span {
+    font-size: 36px;
+    color: #00AEEF;
+}
+.carrossel-slide-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bcb6b6;
+    font-size: 30px;
+    color: #676767;
+}
+.carrossel-products {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 23px;
+}
+.carrossel-slide-products img {
+    width: 14rem;
+    height: 10rem;
+    display: flex;
+    margin-top: 0%;
+}
+.carrossel-slide-products h1 {
+        font-size: 28px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    
+}
+.products-container {
+    margin-bottom: 3%;
+    margin-top: 7%;   
+}
+.mobile-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    
+}
+.button-mobile2 {
+    width: 16%;
+    height: 50px;
+    background: var(--unnamed-color-71d8ff) 0% 0% no-repeat padding-box;
+    background: #71D8FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+}

@@ -6,22 +6,9 @@
   
   .banner img {
     width: 100%;
-    height: auto;
-    display: none; 
+    height: auto; 
   }
   
-  @media (min-width: 768px) {
-    .banner .desktop-image {
-      display: block; 
-    }
-    .desktop-image {
-        display: none;
-    }
-  }
+
   
-  @media (max-width: 767px) {
-    .banner .mobile-image {
-      display: block; 
-    }
-  }
-  
+ 
