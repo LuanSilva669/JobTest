@@ -25,29 +25,34 @@
 }
 
 .input-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 6%;
 }
 .input form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 48%;
+    width: 57%;
     gap: 23px;
-    margin-top: 2%;
-    height: 66%;
+    /* margin-top: 2%; */
+    height: 100%;
+    margin-top: 46px;
 }
-.input{
-    width: 67%;
+.input {
+    width: 83%;
     display: flex;
     gap: 1%;
 }
 .input h1 {
-    width: 37%;
+    width: 50%;
     font-size: 31px;
     color: #033244;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
 }
 .input p {
     width: 58%;
@@ -56,12 +61,12 @@
     color: #0089BC;
 }
 .input form input {
-    height: 88px;
+    height: 57px;
     border-block-color: blue;
     border-radius: 7px;
 }
 .button-mobile5 {
-    width: 25%;
+    width: 39%;
     height: 50px;
     background: var(--unnamed-color-71d8ff) 0% 0% no-repeat padding-box;
     background: #71D8FF 0% 0% no-repeat padding-box;
@@ -74,4 +79,23 @@
 }
 .mobile-button5 {
     margin-top: 20px;
+}
+@media (max-width: 1360){
+    .title h1 {
+        text-align: start;
+        width: 60%;
+        color: #033244;
+        font-family: 'Roboto Slab';
+        font-weight: 900;
+        font-size: 38px;
+    }
+    .input h1 {
+        width: 37%;
+        font-size: 31px;
+        color: #033244;
+    }
+    .desktop-image3 {
+        width: 85%;
+        height: 24rem;
+      }  
 }

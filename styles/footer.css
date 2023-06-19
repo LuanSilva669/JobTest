@@ -4,14 +4,100 @@
    display: none;
 }
 .footer-desktop {
-    background-color: blue;
+    background-color: #283137;
     display: flex;
-}
+    height: 20rem;
+}   
 .footer-desktop img {
-
+    width: 44%;
+    margin-left: 7%;
+    margin-top: 4%;
+}
+.footer-navbar li {
+   
+    padding: 1%;
+    margin-left: 3px;
+    font-size: 22px;
+    width: 105%;
 }
 .footer-logo {
-    vv: q;
+    margin-left: 15%;
+    margin-top: 4%;
     width: 29%;
-    margin-left: 7%;
 }
+.footer-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    height: 20rem;
+    gap: 42px;
+    width: 100%;
+}
+.footer-nav {
+   
+    margin-top: 7%;
+}
+    .footer-nav h1 {
+        color: white;
+    }
+    .footer-navbar a {
+        text-decoration: none;
+        /* padding: 1%; */
+        margin-left: -3px;
+        font-size: 20px;
+        width: 100%;
+        color: #00AEEF;
+        padding-top: 8px;
+    }
+    
+    .fa-facebook:before {
+        font-size: 40px;
+        text-decoration: none;
+    }
+    .fa-instagram:before {
+        font-size: 40px;
+        content: "\f16d";
+    }
+    .fa-linkedin:before {
+        font-size: 40px;
+        content: "\f16d";
+    }
+    .fa-twitter:before {
+        font-size: 40px;
+        content: "\f16d";
+    }
+    .fa-youtube:before {
+        content: "\f16d";
+        font-size: 40px;
+        
+    }
+    .copyrights2 {
+        display: flex;
+        justify-content: space-around;
+        background-color: #283137;
+        height: 12rem;
+        align-items: start;
+    }
+    .copyrights2 h1 {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        color: #E1E1E1;
+        margin-top: 2%;
+    }
+    .social1 h1 {
+        color: #00AEEF;
+        align-items: center;
+        margin-top: 7%;
+    }
+    .social-media1 a {
+        font-size: 31px;
+        color: #71D8FF;
+    }
+    .social-media1 {
+        display: flex;
+        justify-content: center;
+        gap: 29px;
+        margin-top: 5%;
+
+    }

@@ -14,7 +14,8 @@
     margin-bottom: 5%;
 }
 .mobile-image {
-    display: none;
+     display: none; 
+    width: 100%;
 }
 .image-container {
     position: relative;

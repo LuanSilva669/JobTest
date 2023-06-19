@@ -17,10 +17,10 @@
   flex-direction: column;
   align-items: start;
   background-color: #283137;
-  font-size: 30px;
+  font-size: 27px;
   color: #676767;
-  height: 40rem;
-  width: 33rem;
+  height: 52rem;
+  width: 100%;
   gap: 39px;
 }
 .carrossel-slide-services h1 {
@@ -60,4 +60,12 @@
   font-family: 'Roboto Slab';
   font-size: 21px;
 }
+.carrossel-slide-services img{
+    height: 55%;
 
+}
+
+.title span{
+  font-size: 40px;
+  color: #00AEEF;
+}

@@ -18,14 +18,13 @@
   width: 90%;
   height: 24rem;
 }
-  
-  .banner-content-know {
-    position: absolute;
-    top: 50%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: start;
+.banner-content-know {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: start;
 }
   
   .banner-content-know h1 {

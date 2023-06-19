@@ -9,12 +9,13 @@
     text-align: center;
     width: 100%;
     color: #033244;
-    font-size: 38px;
+    font-size: 30px;
     font-family: 'Roboto Slab';
+    margin-bottom: 16px;
 }
 
 .title-products span {
-    font-size: 36px;
+    font-size: 30px;
     color: #00AEEF;
 }
 .carrossel-slide-products {
