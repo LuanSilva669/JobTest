@@ -1,0 +1,17 @@
+
+
+.footer-mobile {
+   display: none;
+}
+.footer-desktop {
+    background-color: blue;
+    display: flex;
+}
+.footer-desktop img {
+
+}
+.footer-logo {
+    vv: q;
+    width: 29%;
+    margin-left: 7%;
+}

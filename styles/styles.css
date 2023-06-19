@@ -361,8 +361,9 @@ nav ul li a {
     display: -webkit-inline-box;
     /* justify-content: center; */
     margin-bottom: 16%;
-    width: 100%;
+    width: 87%;
     height: 21rem;
+    margin-top: 9px;
 }
 .image-container {
     position: relative;
@@ -370,7 +371,7 @@ nav ul li a {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 21rem;
+    height: 28rem;
     margin-top: 10%;
 }
 .banner-recruit-main {
@@ -480,11 +481,7 @@ nav ul li a {
     text-decoration: none;
     font-family: 'Roboto Slab';
  }
- .mobile-image {
-    display: flex;
-    width: 100%;
-    height: 49rem;
-}
+s
 .mobile-image2 {
     display: flex;
     width: 90%;
@@ -601,24 +598,27 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 16rem;
-    margin-top: 13%;
+    height: 27rem;
+    margin-top: 0%;
     margin-bottom: 2rem;
 }
- .input {
-    width: 70%;
-    background-color: #F3F3F3;
+.input {
+    width: 100%;
+    background-color: #a9a3a338;
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: center;
-    margin-top: -4%;
+    margin-top: 0%;
+    width: 81%;
+    height: 92%;
 }
 .input h1 {
-    width: 71%;
+    width: 78%;
     MARGIN-TOP: 15%;
     TEXT-ALIGN: CENTER;
     color: #033244;
+    font-size: 22px;
 }
 .input form {
     display: flex;
@@ -631,18 +631,51 @@ nav ul li a {
     color: #0089BC;
     margin-top: 5%;
     font-family: inherit;
-    font-size: 72%;
-    margin-bottom: 4%;
+    font-size: 67%;
+    width: 100%;
+    margin-bottom: 19%;
+    margin-top: 9%;
+}
+
+
+.input form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5%;
+    align-items: center;
+    height: 22%;
+    width: 85%;
+}
+.mobile-button5 {
+    margin-top: 20px;
+    width: 63%;
+}
+.button-mobile5 {
+    width: 100%;
+    height: 50px;
+    background: var(--unnamed-color-71d8ff) 0% 0% no-repeat padding-box;
+    background: #71D8FF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 20px;
 }
  input {
     width: 90%;
     height: 2rem;
     text-align: center;  
  }
- footer {
+ .mobile-image2 {
+    display: flex;
+}
+ .footer-mobile {
     background-color: #033244;
     height: 100%;
- }
+    display: flex;
+}
     .footer-navbar {
         margin-left: 10%;
         list-style: none;
@@ -749,6 +782,17 @@ nav ul li a {
 .desktop-image {
     display: none;
 }
+.text6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.on-top {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    GAP: 0;
+}
 
 @media (max-width: 360px) {
     .section-columns {
@@ -802,6 +846,8 @@ nav ul li a {
     align-items: center;
     font-size: 13px;
 }
+
+
     }
 
  
